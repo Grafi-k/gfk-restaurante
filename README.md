@@ -43,7 +43,7 @@ gfk-restaurante/
 🎬 Serie en YouTube
 Este proyecto se desarrolla paso a paso en YouTube. ¡Aprende cómo crear sitios profesionales y llevarlos a WordPress!
 
-👉 [Suscríbete al canal de Grafi-k Digital Web en YouTube](https://www.youtube me/@Grafi-k)
+👉 [Suscríbete al canal de Grafi-k Digital Web en YouTube](https://www.youtube.com/@grafi-kdigitalweb)
 
 🏢 Creado por
 Desarrollado con ❤️ por Grafi-k Digital Web.
