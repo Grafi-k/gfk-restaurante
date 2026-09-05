@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFK Restaurante | Cocina de Autor</title>
+  <link rel="icon" type="image/png" href="assets/img/icon-gfk.png">
+  <!-- Fuente Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header de navegación -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/img/Logo-GFK.png" alt="Logo GFK Restaurante">
+      <span>GFK Restaurante</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#about">Sobre nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Hero principal -->
+  <header id="hero" class="hero">
+    <h1>Bienvenido a <br>GFK Restaurante</h1>
+    <p>Cocina de autor con alma casera</p>
+    <button onclick="verMenu()">Ver menú</button>
+  </header>
+
+  <!-- Especialidades -->
+  <section id="especialidades" class="productos">
+    <h2>Especialidades</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/img/filete-parrilla.jpg" alt="Filete a la parrilla">
+        <h3>Filete a la parrilla</h3>
+        <p>Corte premium sellado a la perfección, con reducción de la casa 🥩</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/pescado-dia.jpg" alt="Pescado del día">
+        <h3>Pescado del día</h3>
+        <p>Pesca fresca al horno con hierbas finas y un toque de limón 🐟</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/plato-autor.jpg" alt="Plato de autor">
+        <h3>Plato de autor</h3>
+        <p>Creación del chef que combina texturas y sabores únicos 🍽️</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/postre-casa.jpg" alt="Postre de la casa">
+        <h3>Postre de la casa</h3>
+        <p>Un final dulce con frutos rojos y un toque de chocolate 🍫🍓</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre nosotros -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <h2>Sobre nosotros</h2>
+      <p>Nacimos de la pasión por la cocina de autor y el gusto por compartir. Cada platillo cuenta una historia, cada mesa guarda un recuerdo.</p>
+    </div>
+  </section>
+
+  <!-- Galería del restaurante -->
+  <section id="galeria" class="galeria-cafe">
+    <h2>Nuestra galería</h2>
+    <div class="carousel">
+      <div class="slide"><img src="assets/img/galeria-1.jpg" alt="Mesa junto a la ventana"></div>
+      <div class="slide"><img src="assets/img/galeria-2.jpg" alt="Comensales disfrutando la velada"></div>
+      <div class="slide"><img src="assets/img/galeria-3.jpg" alt="Detalle del salón principal"></div>
+      <div class="slide"><img src="assets/img/galeria-4.jpg" alt="Ambiente cálido de madera"></div>
+      <div class="slide"><img src="assets/img/galeria-5.jpg" alt="Copas listas para el maridaje"></div>
+      <div class="slide"><img src="assets/img/galeria-6.jpg" alt="Copa de vino en primer plano"></div>
+      <div class="slide"><img src="assets/img/galeria-7.jpg" alt="Rincón acogedor del restaurante"></div>
+      <div class="slide"><img src="assets/img/hero-restaurante.jpg" alt="Mesas dispuestas para la cena"></div>
+      <div class="slide"><img src="assets/img/about-restaurante.jpg" alt="Velada entre amigos"></div>
+      <!-- Duplicadas para loop infinito del carrusel -->
+      <div class="slide"><img src="assets/img/galeria-1.jpg" alt="Mesa junto a la ventana"></div>
+      <div class="slide"><img src="assets/img/galeria-2.jpg" alt="Comensales disfrutando la velada"></div>
+      <div class="slide"><img src="assets/img/galeria-3.jpg" alt="Detalle del salón principal"></div>
+      <div class="slide"><img src="assets/img/galeria-7.jpg" alt="Rincón acogedor del restaurante"></div>
+      <div class="slide"><img src="assets/img/galeria-4.jpg" alt="Ambiente cálido de madera"></div>
+      <div class="slide"><img src="assets/img/galeria-5.jpg" alt="Copas listas para el maridaje"></div>
+      <div class="slide"><img src="assets/img/about-restaurante.jpg" alt="Velada entre amigos"></div>
+      <div class="slide"><img src="assets/img/hero-restaurante.jpg" alt="Mesas dispuestas para la cena"></div>
+      <div class="slide"><img src="assets/img/galeria-6.jpg" alt="Copa de vino en primer plano"></div>
+    </div>
+  </section>
+
+  <!-- Horarios y Ubicación -->
+  <section id="horarios" class="horarios-ubicacion">
+    <h2>Horarios y Ubicación</h2>
+    <div class="info">
+      <!-- Columna izquierda: texto -->
+      <div class="horarios">
+        <i class="fa-regular fa-clock"></i>
+        <p>Lunes a sábado</p>
+        <p>1:00 PM - 11:00 PM</p>
+        <i class="fa-regular fa-clock"></i>
+        <p>Domingo</p>
+        <p>1:00 PM - 6:00 PM</p>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Av. Ejemplo #123, Zapopan, Jalisco</p>
+      </div>
+      <!-- Columna derecha: mapa -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119440.55399410262!2d-103.4862285083625!3d20.689207666123114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae61a9704c13%3A0xafd8a5d47ed002ac!2sZapopan%2C%20Jal.!5e0!3m2!1ses!2smx!4v1769214515442!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact-section">
+    <h2>Contáctanos</h2>
+    <p>¿Quieres reservar una mesa o tienes alguna duda? Escríbenos y te responderemos pronto.</p>
+
+    <div class="contact-container">
+      <!-- Formulario -->
+      <form class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos para cuántas personas y a qué hora..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- Información -->
+      <div class="contact-info">
+        <h3>Resérvanos</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Av. Ejemplo #123, Zapopan, Jalisco</p>
+        <p><i class="fa-solid fa-phone"></i> +52 33 1234 5678</p>
+        <p><i class="fa-solid fa-envelope"></i> reservaciones@gfkrestaurante.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tira de imágenes Instagram -->
+  <section class="coffee-strip">
+    <div class="coffee-item">
+      <img src="assets/img/filete-parrilla.jpg" alt="Filete a la parrilla">
+      <div class="overlay">
+        <a href="https://www.instagram.com/grafikdigitalweb/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img src="assets/img/pescado-dia.jpg" alt="Pescado del día">
+      <div class="overlay">
+        <a href="https://www.instagram.com/grafikdigitalweb/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img src="assets/img/postre-casa.jpg" alt="Postre de la casa">
+      <div class="overlay">
+        <a href="https://www.instagram.com/grafikdigitalweb/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img src="assets/img/galeria-5.jpg" alt="Copas para el maridaje">
+      <div class="overlay">
+        <a href="https://www.instagram.com/grafikdigitalweb/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img src="assets/img/plato-autor.jpg" alt="Plato de autor">
+      <div class="overlay">
+        <a href="https://www.instagram.com/grafikdigitalweb/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 GFK Restaurante | Síguenos en redes sociales</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/grafikdigitalweb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+</body>
+</html>
